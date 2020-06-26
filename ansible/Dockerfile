@@ -6,5 +6,5 @@ RUN apt update && \
 
 COPY loop.sh /
 VOLUME /etc/ansible
-
+WORKDIR /etc/ansible
 CMD bash /loop.sh
